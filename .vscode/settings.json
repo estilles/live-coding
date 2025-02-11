@@ -1,11 +1,25 @@
 {
-  "eslint.validate": [
-    "json",
-    "jsonc",
-    "javascript"    
-  ],
+  "editor.indentSize": "tabSize",
+  "editor.detectIndentation": false,
+  "editor.formatOnPaste": true,
   "editor.tabSize": 2,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.suggest.insertMode": "replace",
   "eslint.format.enable": true,
-  "eslint.lintTask.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "json",
+    "jsonp"
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true
+  }
 }
